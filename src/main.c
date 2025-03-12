@@ -4,6 +4,7 @@
 
 int main(){
     menu();
-    initGame();    
+    initGame();   
+    renderBoard(); 
     return 0;
 }
