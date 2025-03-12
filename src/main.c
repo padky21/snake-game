@@ -3,8 +3,10 @@
 #include "snake.c"
 
 int main(){
+    int width = 15;
+    int height = 10;
     menu();
-    initGame(15, 10);   
-    renderBoard(15, 10); 
+    initGame(width, height);   
+    renderBoard(width, height); 
     return 0;
 }

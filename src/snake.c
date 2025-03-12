@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 void initGame(int width, int height){
     int board[width][height];
@@ -8,4 +9,8 @@ void initGame(int width, int height){
             board[j][i] = 0;
         }
     }
+
+    int snakeWPos = rand() % width;
+    int snakeHPos = rand() % height;
+    board[snakeWPos][snakeHPos] = 1;
 }
