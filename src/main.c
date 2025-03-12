@@ -4,6 +4,6 @@
 
 int main(){
     menu();
-    initGame();    
+    initGame(10, 15);   
     return 0;
 }
