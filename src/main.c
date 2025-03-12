@@ -5,8 +5,8 @@
 
 int main(){
     menu();
-    int width = 10, height = 10;
-
+    int width = 30, height = 10;
+    srand(time(NULL));
     int** board = initGame(width, height);
     renderBoard(board, width, height); 
     

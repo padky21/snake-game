@@ -14,8 +14,12 @@ int** createBoard(int width, int height) {
 }
 
 int** initSnake(int** board, int width, int height){
-    int snakeX = rand() % width;
-    int snakeY = rand() % height;
+    int snakeX = rand() % (width - 0 + 1)
+                    + 0;
+    int snakeY = rand() % (height - 0 + 1)
+                    + 0;
+    //int snakeX = rand();
+    //int snakeY = rand();
     board[snakeY][snakeX] = 1;
 
     return board;
@@ -27,6 +31,7 @@ int** initGame(int width, int height){
     initSnake(board, width, height);
     return board;
 }
+
 // Function to free the allocated memory
 void destroyBoard(int** board) {
     free(*board);
