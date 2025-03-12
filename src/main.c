@@ -5,6 +5,6 @@
 int main(){
     menu();
     initGame();   
-    renderBoard(); 
+    renderBoard(15, 10); 
     return 0;
 }
